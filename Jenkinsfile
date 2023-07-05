@@ -16,7 +16,7 @@ pipeline {
             steps {
                 // Use Maven to build the Spring Boot application
                 // Make sure you have Maven installed on the Jenkins agent
-                echo 'build version2'
+                echo 'building with SCM'
             }
         }
 
