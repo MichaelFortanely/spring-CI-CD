@@ -38,18 +38,21 @@ pipeline {
     }
 
     post {
-        always {
-            // Clean up any resources or perform necessary cleanup steps here
-        }
+               always {
+                   // Clean up any resources or perform necessary cleanup steps here
+                   echo 'Always block executed'
+               }
 
-        success {
-            // Actions to perform when the pipeline is successful
-            // For example, you can trigger notifications or perform additional tasks
-        }
+               success {
+                   // Actions to perform when the pipeline is successful
+                   // For example, you can trigger notifications or perform additional tasks
+                   echo 'Success block executed'
+               }
 
-        failure {
-            // Actions to perform when the pipeline fails
-            // For example, you can trigger notifications or perform additional tasks
-        }
+               failure {
+                   // Actions to perform when the pipeline fails
+                   // For example, you can trigger notifications or perform additional tasks
+                   echo 'Failure block executed'
+               }
     }
 }
